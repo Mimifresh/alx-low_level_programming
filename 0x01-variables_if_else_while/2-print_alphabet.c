@@ -2,15 +2,19 @@
 #include <time.h>
 #include <stdio.h>
 
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main - print alphabet in low case followed by a new line
+ *
+ * Return: 0
+ */
 int main(void)
 {
-	int n;
+	char alph;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
+	for (alph = 'a'; alph <= 'z'; alph++)
+	{
+		putchar(alph);
+	}
+	putchar('\n');
 	return (0);
 }
