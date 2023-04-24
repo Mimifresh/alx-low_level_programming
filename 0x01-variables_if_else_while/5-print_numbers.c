@@ -11,10 +11,10 @@ int main(void)
 
 	for (nu = '0'; nu < 10; nu++)
 	{
-		printf("%i", nu);
+		putchar(nu);
 	}
 
-	printf("\n");
+	putchar('\n');
 
 	return (0);
 }
