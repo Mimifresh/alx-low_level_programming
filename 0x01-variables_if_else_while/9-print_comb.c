@@ -11,9 +11,9 @@ int main(void)
 
 	for (com = 48; com < 58; com++)
 	{
-		putchar(com + '0');
+		putchar(com);
 	}
-	if (com < 57)
+	if (com != 57)
 	{
 		putchar(',');
 		putchar(' ');
