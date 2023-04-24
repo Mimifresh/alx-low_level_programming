@@ -9,7 +9,7 @@ int main(void)
 {
 	int com;
 
-	for (com = 48; com < 58, com++;)
+	for (com = 48; com < 58; com++)
 	{
 		putchar(com);
 	}
