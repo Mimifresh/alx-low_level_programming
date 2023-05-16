@@ -26,12 +26,12 @@ char *_strdup(char *str)
 
 	mmm = malloc(sizeof(char) * (i + 1));
 
-	if (aaa == NULL)
+	if (mmm == NULL)
 	{
 		return (NULL);
 	}
 
-	for (r = 0; str[j]; j++)
+	for (j = 0; str[j]; j++)
 	{
 	mmm[j] =  str[j];
 	return (mmm);
