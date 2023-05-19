@@ -32,6 +32,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		z[i++] = s2[j++];
 	while (n >= le2 && i < (le1 + le2))
 		z[i++] = s2[j++];
-	z[i]h = '\0';
+	z[i] = '\0';
 	return (z);
 }
