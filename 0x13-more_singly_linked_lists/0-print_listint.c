@@ -10,7 +10,7 @@
 size_t print_listint(const listint_t *h)
 {
 	const listint_t *nod  = h;
-	size_t num;
+	size_t num = 0;
 
 	while (nod != NULL)
 	{
