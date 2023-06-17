@@ -30,14 +30,14 @@ int main(int argc, char *argv[])
 	check_IO_stat(det, -1, argv[2], 'W');
 	while (n_red == 1024)
 	{
-		n_red = red(sr, bu, sizeof(bu));
+		n_red = read(sr, bu, sizeof(bu));
 		if (n_red == -1)
 			check_IO_stat(-1, -1, argv[1], 'O');
-		wrote = write(det, buf, n_red);
+		wrote = write(det, bu, n_red);
 		if (wrote == -1)
 			check_IO_stat(-1, -1, argv[2], 'W');
 	}
-	close_ sr = close(sr);
+	close_sr = close(sr);
 
 	check_IO_stat(close_sr, sr, NULL, 'C');
 
